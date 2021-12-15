@@ -14,7 +14,9 @@ For example, the ContinuousSpawner function is set up to use always spawn object
 _So if you want to change the continuousSpawners spawning function, dig in and change which method it calls._
 
 ## Complexity
-I have minimized complexity where possible. The games here are just mechanics, with no proper game loop/manager system for restarting or such. I avoid using coroutines, avoid c#8 features, and I don't really bother with optimizing code. I have commented where apropriate, but most of the code remains uncommented.
+I have minimized complexity where possible. The games here are just mechanics, with no proper game loop/manager system for restarting or such. I avoid using coroutines, avoid c#8 features, and I don't really bother with optimizing code. I have commented where appropriate, but most of the code remains uncommented.
+
+Even to my own annoyance, I have avoided interfaces and class hierarchies. This is subject to change, I really want to refactor the timers and add an interface for things-that-can-go-into-ui-text (ToString but pretty).
 
 ## Events
 Where reasonable, I have created UnityEvents that one could use to easily hook up other systems or player feedback, like playing audio and so on.

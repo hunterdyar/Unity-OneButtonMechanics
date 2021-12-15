@@ -40,7 +40,7 @@ public class GameTimer : MonoBehaviour
         active = !active;
     }
 
-    public void Reset()
+    public void Restart()
     {
         timer = 0;
     }

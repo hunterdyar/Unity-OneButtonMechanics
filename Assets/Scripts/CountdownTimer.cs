@@ -41,6 +41,22 @@ public class CountdownTimer : MonoBehaviour
 		OnTimerFinishedEvent.Invoke();
 	}
 
+	public void Pause()
+	{
+		active = false;
+	}
+
+	public void Resume()
+	{
+		active = true;
+	}
+
+	public void TogglePlayPause()
+	{
+		active = !active;
+	}
+	
+
 	public int GetSeconds()
 	{
 		//We do ceil instead of floor because its a countDOWN timer.
