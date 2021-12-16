@@ -15,7 +15,7 @@
 			if (_gameStateController.IsState(GameState.start) && Input.GetButtonDown("Jump"))
 			{
 				_gameStateController.ChangeState(GameState.playing);
-			}else if (_gameStateController.IsState(GameState.gameOver) && Input.GetButtonDown("Jump"))
+			}else if (_gameStateController.IsState(GameState.gameOver) && Input.GetKeyDown(KeyCode.R))
 			{
 				_gameStateController.ChangeState(GameState.restart);
 			}
