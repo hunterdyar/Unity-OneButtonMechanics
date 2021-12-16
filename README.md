@@ -4,7 +4,7 @@ A collection of minigames, but really a collection of useful components for stud
 # How Do
 First, explore the various games. Then look at and into all of the components that make them up. I have split up components as much as possible to aid in flexibility. 
 
-Some of the UI scripts use TextMesh Pro. You may need to import TMP essentials, which you should be prompted to do after addeding a TextMeshPro object to something.
+Some of the UI scripts use TextMesh Pro. You may need to import TMP essentials, which you should be prompted to do after adding a TextMeshPro component/gameObject.
 
 ## Usability
 To be honest, I wouldn't copy these scripts directly into your projects. Instead, make your own as appropriate, and then use the techniques in the code. These scripts are not to be used like an asset, but to be hacked apart and explored. 
