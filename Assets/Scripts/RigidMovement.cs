@@ -8,6 +8,7 @@ public class RigidMovement : MonoBehaviour
 {
 	private Collider2D _collider2D;
 	private Rigidbody2D _rigidbody2D;
+	
 	public bool UseConstantVelocity;
 	public Vector2 constantVel;
 	
