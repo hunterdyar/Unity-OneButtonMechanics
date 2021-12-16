@@ -21,24 +21,34 @@ public class CountdownTimer : MonoBehaviour
 		active = false;
 		if (BeginOnAwake)
 		{
-			BeginTimer();
+			ResetAndStartTimer();
 		}
 	}
 
-	void BeginTimer()
-	{
-		_timer = totalTime;
-		active = true;
-	}
+	
 
 	private void Update()
 	{
-		_timer = _timer - Time.deltaTime;
+		if (active)
+		{
+			_timer = _timer - Time.deltaTime;
+			if (_timer <= 0)
+			{
+				active = false;
+				TimerFinished();
+			}
+		}
 	}
 
 	private void TimerFinished()
 	{
 		OnTimerFinishedEvent.Invoke();
+	}
+
+	public void ResetAndStartTimer()
+	{
+		_timer = totalTime;
+		active = true;
 	}
 
 	public void Pause()
